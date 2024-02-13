@@ -1,0 +1,22 @@
+/* Estilo del Landing Social */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #e2e2de 80%,rgba(226, 16, 29,0.5));
+}
+
+
+.logo{
+    margin: auto;
+   background-image: url(Imagenes/20240113-\ LOGO\ PNG.png);
+   width: 40vw;
+   height: 45vw;
+   background-size: cover;
+}
+
+
