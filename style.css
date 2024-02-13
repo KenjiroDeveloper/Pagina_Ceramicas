@@ -1,4 +1,8 @@
 /* Estilo del Landing Social */
+@font-face {
+    font-family:'CaviarDreamsBold';
+    src: url('Tipografias/CaviarDreams_Bold.ttf') format('truetype');
+}
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +21,23 @@ body{
    width: 40vw;
    height: 45vw;
    background-size: cover;
+   padding: 10px;
 }
 
+.subTitulo h3{
+    font-family: 'CaviarDreamsBold',sans-serif;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 4vw;
+}
+
+
+
+.boton{
+    height: 8vh;
+background-color: aqua;
+display: flex;
+justify-content: center;
+margin: 20px 10px;
+}
 
