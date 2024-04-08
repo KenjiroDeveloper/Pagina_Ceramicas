@@ -8,36 +8,113 @@
     padding: 0;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom, #e2e2de 80%,rgba(226, 16, 29,0.5));
-}
 
+
+
+body{
+    background: linear-gradient(to bottom, #e2e2de 80%,rgba(226, 16, 29,0.5));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
 .logo{
+    display: flex;
+    width: 100vw;
+    height: 35vh;
+    background-color: red;
+    flex-wrap: wrap;
+}
+
+.imagen{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background-color: aqua;
+}
+
+.imagen img{
+    position: absolute;
+    width: 200px;
     margin: auto;
-   background-image: url(Imagenes/20240113-\ LOGO\ PNG.png);
-   width: 40vw;
-   height: 45vw;
-   background-size: cover;
-   padding: 10px;
 }
 
-.subTitulo h3{
-    font-family: 'CaviarDreamsBold',sans-serif;
+section{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px ;
+}
+    
+section h3{
+    font-size: 110%;
+    font-family: 'CaviarDreamsBold', sans-serif;
     text-align: center;
-    padding: 10px 5px;
-    font-size: 4vw;
+}
+/*
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    width: 150px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+    pointer-events: none;
 }
 
+.logo img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: inherit;
+}
 
+section{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    min-width:90%;
+    top:200px;
+    justify-content: center;
+    align-items: center;
+}
+
+section h3{
+    display: flex;
+    max-width: 70%;
+    font-size: 100%;
+    font-family: 'CaviarDreamsBold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+main{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    background-color: rgba(226, 16, 29,0.5);
+    height: 65vh;
+    bottom: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0px;
+
+}
 
 .boton{
-    height: 8vh;
-background-color: aqua;
-display: flex;
-justify-content: center;
-margin: 20px 10px;
-}
-
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 20%;
+    background-color: aqua;
+} */
