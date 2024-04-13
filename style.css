@@ -12,20 +12,49 @@
 
 
 body{
-    background: linear-gradient(to bottom, #e2e2de 80%,rgba(226, 16, 29,0.5));
-    width: 100vw;
+  
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+    animation: cambiarFondo 20s infinite;
     
+}
+
+@keyframes cambiarFondo {
+    0% {
+        background-image: url('/Imagenes/fondo/202229_exterior_aragon_1.jpg'); 
+        background-size: cover;
+    }
+    20% {
+        background-image: url('/Imagenes/fondo/203045_CATANIA_1.jpg'); 
+        background-size: cover;
+    }
+    40% {
+        background-image: url('Imagenes/fondo/203071_MANTELLO_1.jpg'); 
+        background-size: cover;
+    }
+    60% {
+        background-image: url('Imagenes/fondo/203072_ALISOS_1.jpg'); 
+        background-size: cover;
+    }
+    80%{
+        background-image: url('Imagenes/fondo/203065_ACONNA_BEIGE_1.jpg'); 
+        background-size: cover;
+    }
+    100%{
+        background-image: url('Imagenes/fondo/202229_exterior_aragon_1.jpg'); 
+        background-size: cover;
+    }
+   
 }
 
 .logo{
     display: flex;
     width: 100vw;
     height: 35vh;
-    background-color: red;
     flex-wrap: wrap;
+    background-color: transparent;
 }
 
 .imagen{
@@ -35,7 +64,7 @@ body{
     align-items: center;
     width: 100%;
     height: 80%;
-    background-color: aqua;
+    background-color: transparent;
 }
 
 .imagen img{
@@ -58,63 +87,89 @@ section h3{
     font-family: 'CaviarDreamsBold', sans-serif;
     text-align: center;
 }
-/*
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    position: absolute;
-    width: 150px;
-    margin: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10px;
-    pointer-events: none;
-}
-
-.logo img{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    pointer-events: inherit;
-}
-
-section{
-    display: flex;
-    position: absolute;
-    width: 100vw;
-    min-width:90%;
-    top:200px;
-    justify-content: center;
-    align-items: center;
-}
-
-section h3{
-    display: flex;
-    max-width: 70%;
-    font-size: 100%;
-    font-family: 'CaviarDreamsBold', sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
 
 main{
-    width: 100vw;
+    background-color: transparent;
     position: absolute;
-    display: flex;
-    background-color: rgba(226, 16, 29,0.5);
-    height: 65vh;
+    top: 35vh;
     bottom: 0;
-    flex-wrap: wrap;
+    width: 100vw;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 20px 0px;
+
+}
+main ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+li .articulo{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 6vh;
+    transform: skew(-30deg);
+    align-items: center;
+    background-color: #FF0000;
+    border: none;
+}
+
+.articulo .imagenArticulo{
+    position: relative;
+    height: 90%;
+    width: 14%;
+    max-width: 45px;
+    transform: skew(30deg);
+    margin-left: 20px;
+ 
+    
+}
+
+.imagenArticulo img{
+    position: relative;
+    height: 90%;
+}
+
+.articulo h3{
+    transform: skew(30deg);
+    font-size: 140%;
+    position: relative;
+    width: 86%;
+    color:  #E2E2DE;
+    font-weight: bold;
+    font-family: 'CaviarDreamsBold', sans-serif;
+    
 
 }
 
-.boton{
-    display: flex;
-    position: relative;
-    width: 80%;
-    height: 20%;
-    background-color: aqua;
-} */
+button{
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05) skew(-30deg); 
+    box-shadow: 0px 5px 6px 0px #0000006d;
+}
+
+button:active{
+    background-color: #8d0303;
+    transform: scale(0.85) skew(-30deg);
+}
+button:disabled{
+    background-color: #ff0000;
+    transform: scale(1) skew(-30deg);
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 8vh;
+    width: 100vw;
+    background-color:#FF0000;
+}
