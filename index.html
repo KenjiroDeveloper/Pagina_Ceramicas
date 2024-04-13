@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Titulo</title>
+    <title>Bodegazo cerámico</title>
+    <link rel="icon" href="/Imagenes/20240113- LOGO PNG.png" type="image/x-icon">
 </head>
 <body>
     <div class="logo">
@@ -16,12 +17,10 @@
         </section>
     
     </div>
-
-    
     <main>
         <ul>
             <li>
-                <button class="articulo" id="facebook">
+                <button class="articulo" id="facebook" onclick="facebook()">
                     <div class="imagenArticulo">
                         <img src="Imagenes/facebook.png" alt="">
                     </div>
@@ -29,27 +28,29 @@
                 </button>
             </li>
             <li>
-                <button class="articulo" id="whatsapp" >
+                <button class="articulo" id="whatsapp" onclick="whatsapp()">
                     <div class="imagenArticulo">
                         <img src="/Imagenes/whatsapp.png" alt="">
                     </div>
-                    <h3>¡Contactanos en WhatsApp!</h3>
+                    <h3>¡Contáctanos en WhatsApp!</h3>
                 </button>
             </li>
             <li>
-                <button class="articulo" id="google-maps">
+                <button class="articulo" id="google-maps" onclick="googleMaps()">
                     <div class="imagenArticulo">
                         <img src="/Imagenes/ubicacion.png" alt="">
                     </div>
-                    <h3>¡Ubicanos en Google maps!</h3>
+                    <h3>¡Ubíquenos Google maps!</h3>
                 </button>
             </li>
-            
-            
         </ul>
     </main>
     <footer>
-
+        <div class="contenedores">
+            <img src="/Imagenes/ubicacion.png" alt="">
+            <h5>Centro Empresarial La Estación Local 101, frente a Berlinas</h5>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
